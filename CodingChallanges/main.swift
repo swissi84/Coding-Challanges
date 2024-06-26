@@ -36,10 +36,7 @@ var wohnort = "Marl"
 var schritteTaeglich = 1200
 var tagebuchEintrag = "Wetter gut, Frisur sitzt"
 
-alter = 39
-print(name,alter)
 
-print(wohnort)
 
 
 //Coding Challange 2
@@ -73,4 +70,21 @@ var zitat: String = "Positiv Denken"
 var meditiert: Bool = true
 
 
+//Coding Challenge 1.3.1 #13
 
+var treibstoffStand:UInt = 1000
+var geschwindigkeit:UInt = 20
+var restStrecke:UInt = 1500
+var reiseZeit:UInt = 0
+
+geschwindigkeit = geschwindigkeit * 2
+
+print(geschwindigkeit)
+
+reiseZeit += 2
+
+print(reiseZeit)
+
+treibstoffStand -= geschwindigkeit * 2
+
+print(treibstoffStand)
