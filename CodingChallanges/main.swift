@@ -85,6 +85,6 @@ reiseZeit += 2
 
 print(reiseZeit)
 
-treibstoffStand -= geschwindigkeit * 2
+treibstoffStand -= geschwindigkeit
 
 print(treibstoffStand)
