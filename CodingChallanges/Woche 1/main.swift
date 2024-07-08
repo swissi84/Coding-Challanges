@@ -36,6 +36,8 @@ var wohnort = "Marl"
 var schritteTaeglich = 1200
 var tagebuchEintrag = "Wetter gut, Frisur sitzt"
 
+print("----------------Coding Challange 1.1.2-----------------\n\n\n")
+
 
 
 
@@ -69,6 +71,8 @@ var temp: Double = 20.5
 var zitat: String = "Positiv Denken"
 var meditiert: Bool = true
 
+print("----------------Coding Challange 1.3.1-----------------")
+
 
 //Coding Challenge 1.3.1 #13
 
@@ -88,3 +92,85 @@ print(reiseZeit)
 treibstoffStand -= geschwindigkeit
 
 print(treibstoffStand)
+print("----------------Coding Challange 1.3.2-----------------")
+
+
+
+//Coding Challange 1.3.2 #14
+
+
+var mission: (mission: String, crew: Int, distance: Double) = (mission: "Alpha",crew: 5,distance: 1200.5)
+
+print(mission.mission, mission.crew, mission.distance)
+
+mission.mission = "Beta"
+
+let crew: Double = Double(mission.crew)
+
+let distance: Int = Int(mission.distance)
+
+print(crew)
+print(distance)
+print(mission) 
+
+print("----------------Coding Challange 1.4.1-----------------")
+
+
+let labor:Character = "l"
+let anzahl:Character = "8"
+let symbol:Character = "#"
+let emoji:Character = "🔬"
+
+let laborName:String = "Umbrella"
+var chefLabor:String = "Ada"
+var scinceTyp:String = "Virus Infection"
+var status:String = "☢"
+
+//var labReport: (Labor:String, ChefdesLabor:String, StatusdesLabor:String) = ("Umbrella", "Ada", "☢")
+
+var labReport: String = "\(laborName)" + "\n\(chefLabor)" + "\n\(status)"
+
+print(labReport)
+
+
+
+print("----------------Coding Challange 1.4.2-----------------")
+
+
+
+var projectName:String = "QuantumAI"
+var teamleader:String = "Dr.Alan Turing"
+var projectDescription:String = "Erforschung von Quantencomputing"
+
+var project:String = "Project Name: \(projectName)" + "\nTeam Leader: \(teamleader)" + "\nProject Description: \(projectDescription)"
+
+print(project)
+
+print("---------------------------------------------")
+
+
+var encrypted:String = "W🕵️💻 👻💻💻t 🥸👻n Inf🐫rm🕵️t👻k🥸r 🕵️b🥸nd💻 b🥸👻m F🥸rn💻🥸h🥸n? – M👻kr🐫ch👻p💻"
+
+encrypted = encrypted.replacing("👻", with: "i").replacing("🥸", with: "e").replacing("🕵️", with: "a")
+encrypted = encrypted.replacing("💻", with: "s")
+encrypted = encrypted.replacing("🐫", with: "o")
+print(encrypted)
+
+
+
+
+ 
+
+
+
+             
+
+
+              
+              
+              
+            
+           
+
+            
+
