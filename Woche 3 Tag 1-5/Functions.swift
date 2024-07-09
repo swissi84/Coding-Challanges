@@ -52,3 +52,58 @@ let besucher1 = Besucher(name: "Andy", alter: 39, mitglied: true)
 
 
 
+
+struct KundenGeliehen {
+    let buchTitel:String
+    let buchSeiten:Int
+    var leser:String
+    
+    func printInfo() {                                          //methoden innerhalb eines structs
+        print("""
+           Buch Titel: \(buchTitel)
+           Seiten Anzahl: \(buchSeiten)
+           Leser: \(leser)
+           """)
+        }
+    
+    mutating func wechsleLeser(neuerleser: String) {             //leser änder innerhalb eines structs
+        self.leser = neuerleser
+    }
+}
+
+
+
+struct KundenInfo {
+    let kartenNummer:Int
+    var kartenInhaber:String
+    var buecherGeliehen:Int {
+        didSet {
+            print("Bücher (vorher \(oldValue) wurde aktualisiert: \(buecherGeliehen)")
+        }
+    }
+    
+    func printInfo() {
+        print("""
+        Karten Nummer: \(kartenNummer)
+        Karten Inhaber: \(kartenInhaber)
+        Anzahl Geliehener Bücher: \(buecherGeliehen)
+        """)
+    }
+    mutating func buecherImBeseitz(buecherGeliehen:Int) {
+        self.buecherGeliehen = buecherGeliehen
+    }
+    
+    
+}
+
+func neuerKartenInhaber(name: inout String) {
+    name = "Daniel"
+    print("Karten Inhaber geändert zu \(name)")
+    }
+
+
+
+
+
+
+
