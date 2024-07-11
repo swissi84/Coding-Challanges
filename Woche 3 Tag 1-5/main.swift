@@ -40,6 +40,7 @@ var kunde1:KundenInfo = KundenInfo(kartenNummer: 1234, kartenInhaber: "Thomas", 
 
 kunde1.printInfo()
 
+
 kunde1.buecherGeliehen = 7
 
 
@@ -48,11 +49,44 @@ neuerKartenInhaber(name: &kunde1.kartenInhaber)
 
 
 
+print("\n---------Tag 3 Enums-Coding Challange 3.3.1 + 3.3.2-----------\n")
 
 
 
+print("Room: \(roomEnum)")
+print("System Status: \(systemEnum)")
+print("Devicc: \(deviceEnum)")
+
+
+var checkTemp:Temp = Temp(roomTemp2: 18)
+
+//Temp.roomTemp2
+
+     
+    // let test1 = Temp(roomTemp5: .kalt
 
 
 
+print("\n---------Tag 3 Static-Coding Challange 3.4.1 + 3.4.2-----------\n")
 
 
+let guest1 = Motel(guestName: "Alex Zinn", roomNumber: 101)
+
+
+print(Motel.motelName)
+Motel.changeMotelName()
+
+let guest2 = Motel(guestName: "John Doe", roomNumber: 101)
+
+
+print("Guest Name: \(guest1.guestName), Room Number: \(guest1.roomNumber)")
+
+
+Motel3.roomInFunc()
+Motel3.roomInFunc()
+Motel3.roomInFunc()
+Motel3.roomInFunc()
+
+Motel3.roomOutFunc()
+
+Motel3.printRoomReserved()

@@ -78,7 +78,7 @@ struct KundenInfo {
     var kartenInhaber:String
     var buecherGeliehen:Int {
         didSet {
-            print("Bücher (vorher \(oldValue) wurde aktualisiert: \(buecherGeliehen)")
+            print("Anzahl Bücher vorher \(oldValue) wurde aktualisiert auf \(buecherGeliehen)")
         }
     }
     
@@ -92,8 +92,6 @@ struct KundenInfo {
     mutating func buecherImBeseitz(buecherGeliehen:Int) {
         self.buecherGeliehen = buecherGeliehen
     }
-    
-    
 }
 
 func neuerKartenInhaber(name: inout String) {
@@ -105,5 +103,143 @@ func neuerKartenInhaber(name: inout String) {
 
 
 
+//("\n---------Tag 3 Enums-Coding Challange 3.3.1 + 3.2.2-----------\n")
 
 
+enum Room {
+    case wohnzimmer, schlafzimmer, kueche, bad, buero
+}
+
+enum SystemStatus {
+    case an, aus, standby
+}
+
+enum Device {
+    case licht, heizung, klimaanlage, sicherheitssystem
+}
+
+
+var roomEnum:Room = .wohnzimmer
+var deviceEnum:Device = .licht
+var systemEnum:SystemStatus = .an
+
+
+
+    
+    
+    
+
+ 
+
+struct Temp {
+    var roomTemp2:Int
+
+    init(roomTemp2: Int) {
+        self.roomTemp2 = roomTemp2
+        
+        
+            switch roomTemp2 {
+                
+            case 23:
+                print("Die Ziel Temperatur ist erreicht")
+                
+            case 19:
+                print("Die Aufwärmfunktion wird aktiviert")
+                
+            case 27:
+                print("Die Kühlfunktion wird aktiviert")
+            default:
+                print("Die Temperatur wird überwacht")
+            }
+        }
+    }
+    
+
+enum roomTempEnum {
+    case kalt, warm, heiss }
+
+
+struct Test {
+    var roomTemp5:roomTempEnum
+    
+    init(roomTemp5: roomTempEnum) {
+        self.roomTemp5 = roomTemp5
+        
+    }
+    
+    func checkTemperature() {
+        
+        switch roomTemp5 {
+        
+        case .heiss:
+            print("Die Ziel Temperatur ist erreicht")
+            
+        case .warm:
+            print("Die Aufwärmfunktion wird aktiviert")
+            
+        case .kalt:
+            print("Die Kühlfunktion wird aktiviert")
+       
+        }
+    }
+    
+}
+
+
+struct Motel {
+    
+    
+    static var motelName:String = "Holiday Motel"
+    
+    var guestName:String
+    var roomNumber:Int
+    
+    
+    init(guestName: String, roomNumber: Int) {
+        self.guestName = checkIn(guestName: guestName)
+        self.roomNumber = roomNumber
+        
+        func checkIn(guestName:String) -> String {
+            print("\(guestName) has checked in")
+            return guestName
+        }
+        
+        func checkOut(guestName:String) -> String {
+                print("\(guestName) has checked in")
+                return guestName
+                
+            }
+        }
+    
+    static func changeMotelName() {
+        Motel.motelName = "Sleep In Motel"
+        print("Motel Name has changed to \(motelName)")
+    }
+}
+
+struct Motel3 {
+    
+    static var roomReserved = 0
+    
+    let motelName: String
+    let numberOfRooms: Int
+    
+    init(motelName: String, numberOfRooms: Int) {
+        self.motelName = motelName
+        self.numberOfRooms = numberOfRooms
+    }
+    
+    static func roomInFunc() {
+        roomReserved += 1
+        print("Guest Joined the Motel")
+    }
+    
+    static func roomOutFunc() {
+        roomReserved -= 1
+        print("Guest has left the Motel")
+    }
+    
+    static func printRoomReserved() {
+        print("Anzahl an Instanzen von Konto: \(roomReserved)")
+    }
+}
