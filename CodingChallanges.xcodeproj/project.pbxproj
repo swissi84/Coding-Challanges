@@ -171,12 +171,12 @@
 			path = "Woche 4 Tag 1";
 			sourceTree = "<group>";
 		};
-		6579EE922C4671B10015CC94 /* Woche 4 Tag 2 */ = {
+		6579EE922C4671B10015CC94 /* Woche 4 Tag 2-5 */ = {
 			isa = PBXGroup;
 			children = (
 				6579EE932C4671B10015CC94 /* main.swift */,
 			);
-			path = "Woche 4 Tag 2";
+			path = "Woche 4 Tag 2-5";
 			sourceTree = "<group>";
 		};
 		657ED21A2C2AAF4400914317 = {
@@ -187,7 +187,7 @@
 				65747F452C369CF300EA3D4B /* Woche 2 Tag 4 */,
 				657264052C3BD87200399363 /* Woche 3 Tag 1-5 */,
 				6579EE832C451B850015CC94 /* Woche 4 Tag 1 */,
-				6579EE922C4671B10015CC94 /* Woche 4 Tag 2 */,
+				6579EE922C4671B10015CC94 /* Woche 4 Tag 2-5 */,
 				657ED2242C2AAF4400914317 /* Products */,
 			);
 			sourceTree = "<group>";
