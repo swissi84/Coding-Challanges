@@ -103,3 +103,29 @@ print(itemDictonary)
 
 print(itemDictonary.keys)
 print(itemDictonary.values)
+
+
+
+
+print("\n----------------Tag 2 Coding Challange 4.4.1-----------------\n")
+
+
+var music: [String] = ["Rock", "Pop", "Jazz", "Classical"]
+
+for genre in music {
+    print("In Music befindet sich das Genre: \(genre)")
+}
+
+
+
+print("\n----------------Tag 2 Coding Challange 4.4.2-----------------\n")
+
+var range = 1...20
+for number in range {
+    print("Track \(number)")
+}
+
+
+
+
+//menu
