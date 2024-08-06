@@ -77,7 +77,7 @@ class Warenkorb {
     }
     
     func printInfo() {
-       var listWarenkorb = produkte.map { "\($0.name): \($0.preis) Euro" }.joined(separator: "\n")
+        let listWarenkorb = produkte.map { "\($0.name): \($0.preis) Euro" }.joined(separator: "\n")
        
        print("""
               Im Warenkorb: 
@@ -88,7 +88,6 @@ class Warenkorb {
               """)
     }
 }
-
 
 
 let produkt1 = Produkt(name: "Milch", preis: 2.50)
